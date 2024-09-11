@@ -13,4 +13,8 @@
     <PackageReference Include="Sharprompt" Version="2.4.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Capture.Application\Capture.Application.csproj" />
+  </ItemGroup>
+
 </Project>

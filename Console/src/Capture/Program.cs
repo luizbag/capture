@@ -1,6 +1,4 @@
-﻿using Capture.Configuration;
-using Capture.Item;
-using CommandLine;
+﻿using CommandLine;
 
 namespace Capture
 {
@@ -8,7 +6,7 @@ namespace Capture
     {
         public static void Main(string[] args)
         {
-            Parser.Default.ParseArguments<ConfigOptions, ItemOptions>(args)
+           /*  Parser.Default.ParseArguments<ConfigOptions, ItemOptions>(args)
                 .MapResult(
                     (ConfigOptions configOptions) =>
                     {
@@ -22,12 +20,7 @@ namespace Capture
                     },
                     (ItemOptions opts) => RunCaptureItem(opts),
                     errs => 1
-                );
-        }
-
-        public static int RunCaptureItem(ItemOptions opts)
-        {
-            return new CaptureItem(opts).Run();
+                ); */
         }
     }
 }
